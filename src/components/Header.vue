@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <a href=""><img class="logo"src="/image/download.png"/></a>
-    <p class="heading">ISP HackerEarth</p>
-    <p style="color:#4DB388;font-size:25px;margin-top:50px;float:left;">&nbsp &nbsp&nbsp &nbsp-searching ISP made easy</p>
-    <div class="details"  >Total ISP:09&nbsp &nbsp |&nbsp &nbsp API hits:748</div>
-  </div>
+  <header>
+    <a href=""><img class="logo"src=""/></a>
+    <p class="heading">{{ title }}</p>
+    <p style="color:#4DB388;font-size:25px;margin-top:50px;float:left;">&nbsp &nbsp&nbsp &nbsp -- {{ tagline }}</p>
+    <div class="details"  >Total ISP:{{ total_isp }}&nbsp &nbsp |&nbsp &nbsp API hits:{{ api_hits }}</div>
+  </header>
 
 </template>
 <script>
@@ -12,6 +12,10 @@ export default {
 
   data () {
     return {
+      title: 'ISP HackerEarth',
+      tagline: 'searching ISP made easy',
+      total_isp: 9,
+      api_hits: 748,
 
     }
   },
@@ -57,8 +61,13 @@ export default {
     border-radius: 10px;
     text-align:center;
     width:auto;
-
 }
-
-
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: inline;
+  border-bottom: 2px solid black;
+}
 </style>
