@@ -1,9 +1,9 @@
 <template>
   <header>
-    <a href=""><img class="logo"src=""/></a>
+    <img class="logo" src="">
     <p class="heading">{{ title }}</p>
     <p style="color:#4DB388;font-size:25px;margin-top:50px;float:left;">&nbsp &nbsp&nbsp &nbsp -- {{ tagline }}</p>
-    <div class="details"  >Total ISP:{{ total_isp }}&nbsp &nbsp |&nbsp &nbsp API hits:{{ api_hits }}</div>
+    <div class="details"  >Total ISP:{{ total_isp }}&nbsp &nbsp&nbsp &nbsp|&nbsp &nbsp&nbsp &nbspAPI hits:{{ api_hits }}</div>
   </header>
 
 </template>
@@ -13,7 +13,7 @@ export default {
   data () {
     return {
       title: 'ISP HackerEarth',
-      tagline: 'searching ISP made easy',
+      tagline: 'searching ISP made easy!',
       total_isp: 9,
       api_hits: 748,
 
@@ -53,11 +53,12 @@ export default {
     font-size:20px;
     border: 2px solid black;
     padding-left:25px;
-    padding-right:25px;
     padding-bottom:5px;
     padding-top:5px;
+    padding-right: 25px;
     margin-top:45px;
-    margin-left:200px;
+    float: right;
+    margin-right: 15%;
     border-radius: 10px;
     text-align:center;
     width:auto;
